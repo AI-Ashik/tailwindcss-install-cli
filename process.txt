@@ -20,4 +20,4 @@ add some workspace settings for better experience (The setting file provided in 
 8. Create a Build Script by adding this code in the package.json script file 
  "build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
 9. Link output/tailwind.css file to the html file
-10. Run the build script by typing nom run build
+10. Run the build script by typing npm run build

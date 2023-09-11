@@ -1,0 +1,23 @@
+                        Installing TailwindCSS Using CLI
+
+
+Prerequisites : Node js <= 12.3.0 (Check by -v i CLI)
+Extra Things for better experience : Install Tailwindcss Intellisense VS Code extension
+add some workspace settings for better experience (The setting file provided in the repository)
+
+.........................................................................
+                        Type The commands in CLI
+1. Install Node Js in Local Machine
+2. npm init -y
+3. npm i -D tailwindcss
+4. npx tailwindcss init (Creates tailwind.config.js)
+5. Create 2 folder named (src and output) we do our main work in src folder and output will give us the compiled vanilla TailwindCSS
+6. Create src/tailwind.css 
+7. paste this code in the src/tailwindcss.file 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+8. Create a Build Script by adding this code in the package.json script file 
+ "build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
+9. Link output/tailwind.css file to the html file
+10. Run the build script by typing nom run build
